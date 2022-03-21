@@ -1,0 +1,58 @@
+<html>
+        <title>
+  reservation system   
+ </title>
+ 
+ <script src="ticket.js"></script>
+ 
+        <center>
+        <body background="j1.jpg" >
+            <table border="0" width="30%" cellspacing="0" cellpadding="5">
+                <caption ><b><font color="violet" size="6">Booking Details</font></b></caption>
+                <tr>
+                    <td>Movie:</td>
+                       <td> 
+                        <select id="movie" >
+                            <option>movie name</option>
+                            <option value="150">Police story</option>
+                            <option value="150">Avenger</option>
+                            <option value="150">Captain America</option>
+                            <option value="150">Spider man</option>
+                            <option value="150">About Boy</option>
+                            <option value="150">The Worst Person In The World</option>
+                        </select>
+                    </td>
+                    <tr><td>Theater:</td>
+                       <td> <select id="Th">
+                           <option>Theaterlist</option>
+                        <option >Fun Cinema</option>
+                        <option >PVR Cinema</option>
+                        <option >Inox Cinema</option>
+
+                    </select>
+                        </td> </tr>
+                        <tr><td>
+                        Date:
+                    </td> 
+                    <td><input id="bd" type="date"> 
+                    </td> </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input required type="email" id="em" placeholder="@gmail.com"></td>
+                    </tr>
+                    <tr><td>
+                        Ticket qty:
+                    </td>
+                    <td><input required pattern="[0-9] {1}" onshow="img()" type="number" id="qty">
+                        </td>
+                </tr>
+                   
+            </table>
+            <input id="book" type="button" value="Book" onclick="call()"><br><br>
+            <span  id=otpspan></span>
+
+<div id="sw"></div>
+                 
+        </body>
+    </center>
+    </html>                 
